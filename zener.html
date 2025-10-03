@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Zener Cards ESP Training - Psychic Ability & Telepathy Testing Tool</title>
+    
+    <!-- Enhanced Meta Tags -->
+    <meta name="Rating" content="general" />
+    <meta name="DESCRIPTION" content="Test your psychic abilities with our free online Zener Cards ESP test. Practice telepathy and extrasensory perception using the classic 5-symbol cards (circle, plus, waves, square, star) in multiple colors. Track your accuracy and develop your intuitive skills." />
+    <meta name="KEYWORDS" content="Zener cards, ESP test, psychic test, telepathy, extrasensory perception, psychic abilities, intuition test, parapsychology, Rhine cards, clairvoyance test, mind reading, psychic development" />
+    <meta name="author" content="Radius.Center" />
+    <meta name="distribution" content="Global" />
+    <meta name="robots" content="FOLLOW,INDEX" />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://radius.center/zener/zener.html">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Free Zener Cards ESP Test - Test Your Psychic Abilities">
+    <meta property="og:description" content="Practice telepathy and test your psychic abilities with our interactive Zener Cards tool">
+    <meta property="og:url" content="https://radius.center/zener/zener.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Radius.Center">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Free Zener Cards ESP Test">
+    <meta name="twitter:description" content="Test your psychic abilities with interactive Zener Cards">
+    
+    <!-- Language and Hreflang -->
+    <meta name="language" content="en">
+    <link rel="alternate" hreflang="en" href="https://radius.center/zener/zener.html">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Zener Cards ESP Test",
+      "description": "Interactive Zener Cards tool for testing psychic abilities and ESP",
+      "url": "https://radius.center/zener/zener.html",
+      "applicationCategory": "Entertainment",
+      "operatingSystem": "Web Browser",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "creator": {
+        "@type": "Organization",
+        "name": "Radius.Center",
+        "url": "https://radius.center"
+      },
+      "keywords": ["ESP test", "psychic abilities", "telepathy", "Zener cards", "parapsychology"],
+      "genre": ["Psychic Testing", "ESP", "Parapsychology"]
+    }
+    </script>
+    
+    <link rel="SHORTCUT ICON" href="favicon.ico" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+		.hidden-title {
+		    display: none;
+		}
+        #image-container {
+            margin-top: 20px;
+        }
+        #image-container img {
+            width: 263px;
+            height: 363px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        #reveal-button {
+            font-size: 36px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            background-color: #fff;
+            color: #000;
+            cursor: pointer;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease-in-out;
+        }
+        #reveal-button:hover {
+            background-color: #f7f7f7;
+        }
+        #reveal-button:active {
+            transform: translateY(2px);
+            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+        }
+        #options-table td {
+	    text-align: left;
+	    vertical-align: top;
+		}
+		/* add dark mode styles */
+        .dark-mode {
+            background-color: #333;
+            color: #fff;
+        }
+        .dark-mode .card {
+            background-color: #444;
+        }
+        .dark-mode .card img {
+            filter: invert(1); /* invert image colors in dark mode */
+        }
+		.dark-mode #image-container img {
+		    filter: invert(0.85) hue-rotate(180deg);
+		}
+		.dark-mode button {
+			background-color: #444;
+			color: white;
+			border-color: #555;
+		}
+        /* add toggle switch styles */
+        .toggle-switch {
+            position: absolute;
+            top: 20px;
+            right: 95px;
+            display: inline-block;
+            width: 50px;
+            height: 25px;
+            background-color: #ccc;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+        .toggle-switch::before {
+            content: "";
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            width: 21px;
+            height: 21px;
+            background-color: #fff;
+            border-radius: 50%;
+            transition: transform 0.5s;
+        }
+        .toggle-switch.active {
+            background-color: #5555ff;
+        }
+        .toggle-switch.active::before {
+            transform: translateX(25px);
+        }
+        .help-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 28px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            background-color: #fff;
+            color: #000;
+            cursor: pointer;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease-in-out, background-color 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .help-btn:hover {
+            background-color: #f7f7f7;
+        }
+        .help-btn:active {
+            transform: translateY(2px);
+            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+        }
+        .dark-mode .help-btn {
+            background-color: #444;
+            color: white;
+            border-color: #555;
+        }
+    </style>
+</head>
+<body>
+<div id="dark-mode-toggle" class="toggle-switch"></div>
+<a href="help.html" class="help-btn" title="Help Documentation" aria-label="Help Documentation">?</a>
+<div class="hidden-title"><center><h1>Zener Cards</h1></center></p></div>
+<center><table id="options-table" border="1" cellpadding="10" cellspacing="5">
+    <tr>
+        <th>Shape</th>
+        <th>Color</th>
+        <!--<th>Pattern</th>-->
+    </tr>
+    <tr>
+        <td style="text-align: left; vertical-align: top;">
+            <input type="radio" id="circle" name="shape"><label for="circle">1 Circle  </label><br>
+            <input type="radio" id="plus" name="shape"><label for="plus">2 Plus  </label><br>
+            <input type="radio" id="waves" name="shape"><label for="waves">3 Waves  </label><br>
+            <input type="radio" id="square" name="shape"><label for="square">4 Square  </label><br>
+            <input type="radio" id="star" name="shape"><label for="star">5 Star  </label>
+        </td>
+        <td style="text-align: left; vertical-align: top;">
+            <input type="radio" id="black" name="color"><label for="black" style="color: #000000;">Black  </label><!--(<label for="black" style="color: #D9D9D9;">White  </label>)--><br>
+            <input type="radio" id="purple" name="color"><label for="purple" style="color: #8A05FF;">Purple  </label><!--(<label for="purple" style="color: #F194FF;">Magenta  </label>)--><br>
+            <input type="radio" id="blue" name="color"><label for="blue" style="color: #00C2FF;">Blue  </label><!--(<label for="blue" style="color: #0085B0;">Blue  </label>)--><br>
+            <input type="radio" id="green" name="color"><label for="green" style="color: #00AF00;">Green  </label><!--(<label for="green" style="color: #29A429;">Green  </label>)--><br>
+            <input type="radio" id="yellow" name="color"><label for="yellow" style="color: #FFFF05;">Yellow  </label><!--(<label for="yellow" style="color: #3F3F00;">Bronze  </label>)--><br>
+            <input type="radio" id="orange" name="color"><label for="orange" style="color: #FF6A00;">Orange  </label><!--(<label for="orange" style="color: #D66D23;">Orange  </label>)--><br>
+            <input type="radio" id="red" name="color"><label for="red" style="color: #FF0019;">Red  </label><!--(<label for="red" style="color: #FF8A9C;">Pink  </label>)-->
+        </td>
+        <!--<td style="text-align: left; vertical-align: top;">
+            <input type="radio" id="straight" name="pattern">
+            <label for="straight">Straight  </label><br>
+            <input type="radio" id="curved" name="pattern">
+            <label for="curved">Curved  </label>
+        </td>-->
+    </tr>
+</table></center></p>
+
+    <div id="counter">Correct: <span id="correct-count">0</span> / <span id="total-count">0</span> (<span id="correct-percentage">0%</span>)</div></p>
+    
+    <button id="reveal-button">Reveal</button>
+    <div id="image-container"></div>
+
+    <script>
+	// Dark mode toggle functionality
+	const darkModeToggle = document.getElementById('dark-mode-toggle');
+	const body = document.body;
+
+	darkModeToggle.addEventListener('click', () => {
+	    body.classList.toggle('dark-mode');
+	    darkModeToggle.classList.toggle('active');
+	    localStorage.setItem('darkMode', body.classList.contains('dark-mode'));
+	});
+	
+	// Apply saved dark mode preference on page load
+	if (localStorage.getItem('darkMode') === 'true') {
+	    body.classList.add('dark-mode');
+	    darkModeToggle.classList.add('active');
+	}
+
+	// Calculate Correct, Total, and Percentage
+	const revealButton = document.getElementById('reveal-button');
+	const imageContainer = document.getElementById('image-container');
+	const correctCountSpan = document.getElementById('correct-count');
+	const totalCountSpan = document.getElementById('total-count');
+	const correctPercentageSpan = document.getElementById('correct-percentage');
+
+	const images = [
+	    '1-black-circle.png',
+	    '1-blue-circle.png',
+	    '1-green-circle.png',
+	    '1-orange-circle.png',
+	    '1-purple-circle.png',
+	    '1-red-circle.png',
+	    '1-yellow-circle.png',
+	    '2-black-plus.png',
+	    '2-blue-plus.png',
+	    '2-green-plus.png',
+	    '2-orange-plus.png',
+	    '2-purple-plus.png',
+	    '2-red-plus.png',
+	    '2-yellow-plus.png',
+	    '3-black-waves.png',
+	    '3-blue-waves.png',
+	    '3-green-waves.png',
+	    '3-orange-waves.png',
+	    '3-purple-waves.png',
+	    '3-red-waves.png',
+	    '3-yellow-waves.png',
+	    '4-black-square.png',
+	    '4-blue-square.png',
+	    '4-green-square.png',
+	    '4-orange-square.png',
+	    '4-purple-square.png',
+	    '4-red-square.png',
+	    '4-yellow-square.png',
+	    '5-black-star.png',
+	    '5-blue-star.png',
+	    '5-green-star.png',
+	    '5-orange-star.png',
+	    '5-purple-star.png',
+	    '5-red-star.png',
+	    '5-yellow-star.png',
+	];
+
+	let currentImage = null;
+	let correct = 0;
+	let total = 0;
+	let percentage = 0;
+
+	revealButton.addEventListener('click', () => {
+	    if (revealButton.textContent === 'Reveal') {
+	        const randomIndex = Math.floor(Math.random() * images.length);
+	        const randomImage = images[randomIndex];
+	        currentImage = document.createElement('img');
+	        currentImage.src = randomImage;
+	        imageContainer.innerHTML = ''; // Clear the container
+	        imageContainer.appendChild(currentImage); // Add the new image
+
+	        // Get the selected radio options
+	        const circleShape = document.querySelector('input[name="shape"][id="circle"]');
+	        const isCircleSelected = circleShape.checked;
+	        const plusShape = document.querySelector('input[name="shape"][id="plus"]');
+	        const isPlusSelected = plusShape.checked;
+	        const wavesShape = document.querySelector('input[name="shape"][id="waves"]');
+	        const isWavesSelected = wavesShape.checked;
+	        const squareShape = document.querySelector('input[name="shape"][id="square"]');
+	        const isSquareSelected = squareShape.checked;
+	        const starShape = document.querySelector('input[name="shape"][id="star"]');
+	        const isStarSelected = starShape.checked;
+
+	        const blackColor = document.querySelector('input[name="color"][id="black"]');
+	        const isBlackSelected = blackColor.checked;
+	        const blueColor = document.querySelector('input[name="color"][id="blue"]');
+	        const isBlueSelected = blueColor.checked;
+	        const greenColor = document.querySelector('input[name="color"][id="green"]');
+	        const isGreenSelected = greenColor.checked;
+	        const orangeColor = document.querySelector('input[name="color"][id="orange"]');
+	        const isOrangeSelected = orangeColor.checked;
+	        const purpleColor = document.querySelector('input[name="color"][id="purple"]');
+	        const isPurpleSelected = purpleColor.checked;
+	        const redColor = document.querySelector('input[name="color"][id="red"]');
+	        const isRedSelected = redColor.checked;
+	        const yellowColor = document.querySelector('input[name="color"][id="yellow"]');
+	        const isYellowSelected = yellowColor.checked;
+
+	        // Check if the selected shape and color match the revealed image
+	        let shapeCorrect = false;
+	        let colorCorrect = false;
+
+	        if ((isCircleSelected && randomImage.includes('1-')) ||
+	            (isPlusSelected && randomImage.includes('2-')) ||
+	            (isWavesSelected && randomImage.includes('3-')) ||
+	            (isSquareSelected && randomImage.includes('4-')) ||
+	            (isStarSelected && randomImage.includes('5-'))) {
+	            shapeCorrect = true;
+	        }
+
+	        if ((isBlackSelected && randomImage.includes('black')) ||
+	            (isBlueSelected && randomImage.includes('blue')) ||
+	            (isGreenSelected && randomImage.includes('green')) ||
+	            (isOrangeSelected && randomImage.includes('orange')) ||
+	            (isPurpleSelected && randomImage.includes('purple')) ||
+	            (isRedSelected && randomImage.includes('red')) ||
+	            (isYellowSelected && randomImage.includes('yellow'))) {
+	            colorCorrect = true;
+	        }
+
+	        if (shapeCorrect && colorCorrect) {
+	            correct += 2;
+	        } else if (shapeCorrect || colorCorrect) {
+	            correct++;
+	        }
+
+	        total++;
+	        percentage = (correct / total) * 100;
+	        correctCountSpan.textContent = correct;
+	        totalCountSpan.textContent = total;
+	        correctPercentageSpan.textContent = `${percentage.toFixed(2)}%`;
+
+	        revealButton.textContent = 'New';
+	    } else {
+	        imageContainer.removeChild(currentImage);
+	        currentImage = null;
+	        revealButton.textContent = 'Reveal';
+
+	        // Clear selected radio buttons
+	        const radioButtons = document.querySelectorAll('input[type="radio"]');
+	        radioButtons.forEach((radioButton) => {
+	            radioButton.checked = false;
+	        });
+	    }
+	});
+    </script>
+</body>
+</html>
